@@ -1,0 +1,74 @@
+.container-fluid {
+    background-image: url(../../../assets/img/training-course-banner-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    // min-height: 70vh;
+    position: relative;
+    .row {
+        display: flex;
+        margin-bottom: 0;
+
+        .box {
+            width: 50%;
+            // background: red;
+            height: auto;
+
+            img {
+                height: 250px;
+                margin: 0;
+                padding: 0;
+                // background-color: pink;
+            }
+
+            p {
+                margin-top: 30px;
+                text-align: justify;
+            }
+        }
+
+        .box:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+        }
+    }
+
+    h2 {
+        color: #b40e0e;
+    }
+
+    h5 {
+        color: #273691;
+    }
+    app-features{
+        display: block;
+        position: absolute;
+        top:0;
+        // background-color: red;
+        width:95%;
+        transform: translateY(-50%);
+        z-index: 999;
+    }
+}
+
+
+@media (max-width:991px){
+
+.container-fluid{
+
+    .row{
+        flex-direction: column;
+
+        .box{
+            width:100%;
+        }
+    }
+
+    app-features{
+        position: relative;
+        
+    }
+}
+}

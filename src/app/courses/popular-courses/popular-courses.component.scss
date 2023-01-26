@@ -1,0 +1,34 @@
+.container-fluid{
+    background: #434f66;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        .row{
+            margin-top: 20px;
+            display: flex;
+            gap:20px;
+            button{
+                display: flex;
+                width:fit-content;
+                outline: none;
+                border: solid 1px #8d9cb6;
+                background: #900909;
+                background: #272f3d;
+                color: #fff;
+                border-radius: 20px;
+                padding: 5px 10px 5px 10px;
+                font-weight: 500;
+            }
+
+            button:last-child{
+                background: #fff;
+                color: #b40e0e;
+            }
+        }
+    }
+}

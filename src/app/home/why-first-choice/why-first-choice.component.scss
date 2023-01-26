@@ -1,0 +1,64 @@
+.container-fluid {
+    min-height: 80vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .container {
+
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        h2 {
+            color: #b40e0e;
+        }
+
+        h5 {
+            color: #273691;
+        }
+
+        .row {
+            // background-color: red;
+            height: 100%;
+            display: flex;
+
+            .col {
+                position: relative;
+
+                img {
+                    width: 400px;
+                }
+
+                .image-bg {
+                    position: absolute;
+                    right: 40%;
+                    bottom: -50px;
+                    z-index: -1;
+
+                    img {
+                        width: 150%;
+                    }
+                }
+                p{
+                    text-align: justify;
+                }
+                button{
+                    outline: none;
+                    border: none;
+                    padding: 10px 20px;
+                    margin-top: 20px;
+                    font-weight: 600;
+                    background: linear-gradient(45deg, #273691,#050d3f);
+                    color: #fff;
+                    border-bottom: solid 3px #96d8ca;
+                    transition: all 0.3s ease-in;
+                }
+                button:hover{
+                    transition: all 0.3s ease-in;
+                    background: #96d8ca;
+                    color: #000;
+                    border-bottom: #fc02d2 solid 3px;
+                }
+            }
+        }
+    }
+}

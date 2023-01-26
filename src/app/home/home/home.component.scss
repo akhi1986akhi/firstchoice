@@ -1,0 +1,60 @@
+.carousel-item{
+    // min-height: 70vh;
+    background-color: pink;
+}
+
+.title{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    top:0;
+    // background: rgba(39, 38, 38, 0.327);
+    color: rgb(27, 3, 108);
+    // height: 30%;
+    padding: 20px;
+    backdrop-filter: blur(3px);
+    top:30%;
+    // transform: translateY(50%);
+    
+    p{
+        padding-left:0 ;
+        margin-left: 0;
+        // background-color: pink;
+    }
+    button{
+        outline: none;
+        border: none;
+        width:200px;
+        margin-top: 50px;
+        padding: 5px 10px;
+        font-size: 1.5em;
+        background: linear-gradient(45deg, #273691,#050d3f);
+        color:rgb(255, 0, 208);
+        font-weight: 600;
+        color: #fff;
+        border-left: solid 5px rgb(156, 3, 3);
+    }
+}
+app-features{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    z-index: +1;
+    height: 100%;
+    width:100%;
+}
+@media (max-width:991px){
+
+
+.title{
+    top:0%;
+
+}
+button{
+    margin-top: 0px;
+}
+p{
+    display: none;
+}
+}

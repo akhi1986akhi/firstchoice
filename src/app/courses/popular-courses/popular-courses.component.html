@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <h1>
+        Top Popular Filds
+    </h1>
+    <div class="container" *ngFor="let item of topFields">
+        <h4>{{item.fieldName}}</h4>
+        <div class="row" >
+            <button *ngFor="let field of item.areaNames">{{field}}</button>
+
+        </div>
+    </div>
+    
+    
+</div>
